@@ -23,7 +23,7 @@ export default function Publications({ textColor, accent }) {
             auditory periphery.
           </Text>
         </LinkOverlay>
-        <Text fontSize={"sm"}>
+        <Text fontSize={"sm"} pt={2}>
           Benghanem, S., <b>Guha, R.</b>, Pruvost-Robieux, E., Levi-Strauss, J.,
           Joucla, C., Cariou, A., ... & Aucouturier, J. J.
         </Text>
