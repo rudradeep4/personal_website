@@ -32,7 +32,7 @@ export default function Home() {
       flexDir={"column"}
       alignItems={"center"}
     >
-      <Box w={["100%", "700px"]} px={[4, 0]} my={[4, 32]}>
+      <Box w={["100%", "700px"]} px={[4, 0]} my={[4, 16]}>
         <Flex>
           <Image
             src="/me2_test.svg"

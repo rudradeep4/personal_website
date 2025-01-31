@@ -9,16 +9,16 @@ export default function Main({ textColor, accent }) {
   return (
     <Box color={textColor}>
       <Text
-        pt={4}
+        pt={8}
         fontFamily={"Fragment Mono"}
-        fontSize={"xl"}
+        fontSize={["md", "xl"]}
       >
         Rudradeep Guha
       </Text>
       <Text
         pt={8}
         fontFamily={"Fragment Mono"}
-        fontSize={"md"}
+        fontSize={["sm", "md"]}
         color={textColor}
       >
         PhD Student <br />
@@ -65,7 +65,7 @@ export default function Main({ textColor, accent }) {
           <IconButton
             variant="ghost"
             aria-label="Email"
-            size="lg"
+            size={["md", "lg"]}
             _hover={{ bg: "None", color: accent }}
             _active={{ color: accent }}
             color={textColor}
@@ -77,7 +77,7 @@ export default function Main({ textColor, accent }) {
           <IconButton
             variant="ghost"
             aria-label="Github"
-            size="lg"
+            size={["md", "lg"]}
             _hover={{ bg: "None", color: accent }}
             _active={{ colorMode: accent }}
             color={textColor}
@@ -89,7 +89,7 @@ export default function Main({ textColor, accent }) {
           <IconButton
             variant="ghost"
             aria-label="Orcid"
-            size="lg"
+            size={["md", "lg"]}
             _hover={{ bg: "None", color: accent }}
             _active={{ colorMode: accent }}
             color={textColor}
@@ -104,7 +104,7 @@ export default function Main({ textColor, accent }) {
           <IconButton
             variant="ghost"
             aria-label="Google Scholar"
-            size="lg"
+            size={["md", "lg"]}
             _hover={{ bg: "None", color: accent }}
             _active={{ colorMode: accent }}
             color={textColor}

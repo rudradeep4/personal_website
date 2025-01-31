@@ -6,7 +6,7 @@ export default function Publications({ textColor, accent }) {
     <Box color={textColor}>
       <Text
         pt={8}
-        fontSize={"2xl"}
+        fontSize={["md", "xl"]}
         fontFamily={"Fragment Mono"}
         color={textColor}
       >
@@ -23,11 +23,11 @@ export default function Publications({ textColor, accent }) {
             auditory periphery.
           </Text>
         </LinkOverlay>
-        <Text fontSize={"sm"} pt={2}>
+        <Text fontSize={"xs"} pt={1}>
           Benghanem, S., <b>Guha, R.</b>, Pruvost-Robieux, E., Levi-Strauss, J.,
           Joucla, C., Cariou, A., ... & Aucouturier, J. J.
         </Text>
-        <Text fontSize={"sm"}>Cortex, 2024</Text>
+        <Text fontSize={"xs"}>Cortex, 2024</Text>
       </LinkBox>
     </Box>
   );

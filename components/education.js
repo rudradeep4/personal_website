@@ -15,14 +15,14 @@ export default function Education({ textColor, accent }) {
     <Box color={textColor}>
       <Text
         pt={8}
-        fontSize={"2xl"}
+        fontSize={["md", "xl"]}
         fontFamily={"Fragment Mono"}
         color={textColor}
       >
         Education
       </Text>
 
-      <TimelineRoot variant={"solid"} pt={8}>
+      <TimelineRoot pt={8}>
         <TimelineItem>
           <TimelineContent>
             <TimelineTitle fontFamily={"Fragment Mono"}>
