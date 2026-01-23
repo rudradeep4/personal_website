@@ -15,7 +15,7 @@ export default function Publications({ textColor, accent }) {
 
       <LinkBox fontFamily={"Fragment Mono"} pt={8}>
         <LinkOverlay
-          href="https://www.sciencedirect.com/science/article/pii/S0010945224001692"
+          href="../public/Thesis_RudradeepGuha_Final.pdf"
           _hover={{ color: accent }}
         >
           <Text fontSize={"sm"}>
