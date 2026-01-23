@@ -26,7 +26,7 @@ export default function Education({ textColor, accent }) {
         <TimelineItem>
           <TimelineContent>
             <TimelineTitle fontFamily={"Fragment Mono"}>
-              PhD (2022 - )
+              PhD (2022 - 2025)
             </TimelineTitle>
             <TimelineDescription fontFamily={"Fragment Mono"} textColor={textColor}>
               Institut FEMTO-ST <br />
