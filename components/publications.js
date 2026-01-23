@@ -15,7 +15,8 @@ export default function Publications({ textColor, accent }) {
 
       <LinkBox fontFamily={"Fragment Mono"} pt={8}>
         <LinkOverlay
-          href="../public/Thesis_RudradeepGuha_Final.pdf"
+          href="../../public/Thesis_RudradeepGuha_Final.pdf"
+          target="_blank"
           _hover={{ color: accent }}
         >
           <Text fontSize={"sm"}>
