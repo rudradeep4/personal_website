@@ -19,6 +19,21 @@ export default function Publications({ textColor, accent }) {
           _hover={{ color: accent }}
         >
           <Text fontSize={"sm"}>
+            The social transfer function: a system-identification approach to studying social contingency
+          </Text>
+        </LinkOverlay>
+        <Text fontSize={"xs"} pt={1}>
+          <b>Guha, R.</b>
+        </Text>
+        <Text fontSize={"xs"}>PhD thesis, 2025</Text>
+      </LinkBox>
+            
+      <LinkBox fontFamily={"Fragment Mono"} pt={8}>
+        <LinkOverlay
+          href="https://neuro-team-femto.github.io/articles/2024/benghanem_cortex_2024.pdf"
+          _hover={{ color: accent }}
+        >
+          <Text fontSize={"sm"}>
             Cortical responses to looming sources are explained away by the
             auditory periphery.
           </Text>
