@@ -15,7 +15,7 @@ export default function Publications({ textColor, accent }) {
 
       <LinkBox fontFamily={"Fragment Mono"} pt={8}>
         <LinkOverlay
-          href="../../public/Thesis_RudradeepGuha_Final.pdf"
+          href="Thesis_RudradeepGuha_Final.pdf"
           target="_blank"
           _hover={{ color: accent }}
         >
@@ -32,6 +32,7 @@ export default function Publications({ textColor, accent }) {
       <LinkBox fontFamily={"Fragment Mono"} pt={8}>
         <LinkOverlay
           href="https://neuro-team-femto.github.io/articles/2024/benghanem_cortex_2024.pdf"
+          target="_blank"
           _hover={{ color: accent }}
         >
           <Text fontSize={"sm"}>
