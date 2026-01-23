@@ -15,15 +15,15 @@ export default function Main({ textColor, accent }) {
       >
         Rudradeep Guha
       </Text>
-      // <Text
-      //   pt={8}
-      //   fontFamily={"Fragment Mono"}
-      //   fontSize={["sm", "md"]}
-      //   color={textColor}
-      // >
-      //   PhD Student <br />
-      //   Institut FEMTO-ST
-      // </Text>
+      //// <Text
+      ////   pt={8}
+      ////   fontFamily={"Fragment Mono"}
+      ////   fontSize={["sm", "md"]}
+      ////   color={textColor}
+      //// >
+      ////   PhD Student <br />
+      ////   Institut FEMTO-ST
+      //// </Text>
 
       <Box pt={4}>
         <Badge
