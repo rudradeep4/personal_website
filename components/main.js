@@ -1,8 +1,6 @@
 "use client";
 import { Box, Text, Badge, IconButton, HStack, Link } from "@chakra-ui/react";
-import { SiGooglescholar } from "react-icons/si";
-import { TbBrandGmail, TbBrandGithub } from "react-icons/tb";
-import { LiaOrcid } from "react-icons/lia";
+import { SiGmail, SiGithub, SiOrcid, SiGooglescholar } from "react-icons/si";
 import "@fontsource/fragment-mono";
 
 export default function Main({ textColor, accent }) {
@@ -12,6 +10,8 @@ export default function Main({ textColor, accent }) {
         pt={8}
         fontFamily={"Fragment Mono"}
         fontSize={["md", "xl"]}
+        fontWeight={"bold"}
+        color={accent}
       >
         Rudradeep Guha
       </Text>
@@ -61,7 +61,7 @@ export default function Main({ textColor, accent }) {
             _active={{ color: accent }}
             color={textColor}
           >
-            <TbBrandGmail />
+            <SiGmail />
           </IconButton>
         </Link>
         <Link href="https://github.com/rudradeep4" isExternal>
@@ -73,7 +73,7 @@ export default function Main({ textColor, accent }) {
             _active={{ colorMode: accent }}
             color={textColor}
           >
-            <TbBrandGithub />
+            <SiGithub />
           </IconButton>
         </Link>
         <Link href="https://orcid.org/0000-0002-0227-6401" isExternal>
@@ -85,7 +85,7 @@ export default function Main({ textColor, accent }) {
             _active={{ colorMode: accent }}
             color={textColor}
           >
-            <LiaOrcid />
+            <SiOrcid />
           </IconButton>
         </Link>
         <Link
