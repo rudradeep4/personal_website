@@ -1,109 +1,86 @@
 "use client";
 import { Box, Text, Badge, IconButton, HStack, Link } from "@chakra-ui/react";
-import { SiGmail, SiGithub, SiOrcid, SiGooglescholar } from "react-icons/si";
-import "@fontsource/fragment-mono";
+import { LuMail, LuGithub } from "react-icons/lu";
+import '@fontsource-variable/stack-sans-headline';
+
 
 export default function Main({ textColor, accent }) {
+  const ff = "Stack Sans Headline Variable";
+
   return (
     <Box color={textColor}>
       <Text
         pt={8}
-        fontFamily={"Fragment Mono"}
-        fontSize={["md", "xl"]}
+        fontFamily={ff}
+        fontSize={["lg", "2xl"]}
         fontWeight={"bold"}
         color={accent}
       >
         Rudradeep Guha
       </Text>
 
-      <Box pt={4}>
+      <Box pt={2}>
         <Badge
           variant={"outline"}
           color={textColor}
-          fontFamily={"Fragment Mono"}
-          mr={2}
+          fontFamily={ff}
+          mr={1}
         >
           social cognition
         </Badge>
         <Badge
           variant={"outline"}
           color={textColor}
-          fontFamily={"Fragment Mono"}
-          mr={2}
+          fontFamily={ff}
+          mr={1}
         >
           temporal response functions
         </Badge>
         <Badge
           variant={"outline"}
           color={textColor}
-          fontFamily={"Fragment Mono"}
-          mr={2}
+          fontFamily={ff}
+          mr={1}
         >
           interpersonal synchrony
         </Badge>
         <Badge
           variant={"outline"}
           color={textColor}
-          fontFamily={"Fragment Mono"}
-          mr={2}
+          fontFamily={ff}
+          mr={1}
         >
           disorders of consciousness
         </Badge>
       </Box>
 
-      <HStack pt={4}>
+      <HStack pt={2} ml={-2.5}>
         <Link href="mailto:rudradeep4@gmail.com" isExternal>
           <IconButton
             variant="ghost"
             aria-label="Email"
-            size={["md", "lg"]}
+            size={["sm", "md"]}
             _hover={{ bg: "None", color: accent }}
             _active={{ color: accent }}
             color={textColor}
           >
-            <SiGmail />
+            <LuMail />
           </IconButton>
         </Link>
-        <Link href="https://github.com/rudradeep4" isExternal>
+        <Link href="https://github.com/rudradeep4" isExternal target="_blank">
           <IconButton
             variant="ghost"
             aria-label="Github"
-            size={["md", "lg"]}
+            size={["sm", "md"]}
             _hover={{ bg: "None", color: accent }}
             _active={{ colorMode: accent }}
             color={textColor}
           >
-            <SiGithub />
-          </IconButton>
-        </Link>
-        <Link href="https://orcid.org/0000-0002-0227-6401" isExternal>
-          <IconButton
-            variant="ghost"
-            aria-label="Orcid"
-            size={["md", "lg"]}
-            _hover={{ bg: "None", color: accent }}
-            _active={{ colorMode: accent }}
-            color={textColor}
-          >
-            <SiOrcid />
-          </IconButton>
-        </Link>
-        <Link
-          href="https://scholar.google.com/citations?user=Zj_w2T8AAAAJ&hl=en&oi=ao"
-          isExternal
-        >
-          <IconButton
-            variant="ghost"
-            aria-label="Google Scholar"
-            size={["md", "lg"]}
-            _hover={{ bg: "None", color: accent }}
-            _active={{ colorMode: accent }}
-            color={textColor}
-          >
-            <SiGooglescholar />
+            <LuGithub />
           </IconButton>
         </Link>
       </HStack>
+
     </Box>
   );
 }

@@ -1,12 +1,14 @@
 import { Box, Text, LinkBox, LinkOverlay } from "@chakra-ui/react";
-import "@fontsource/fragment-mono";
+import "@fontsource-variable/stack-sans-headline";
 
 export default function Publications({ textColor, accent }) {
+  const ff = "Stack Sans Headline Variable";
+
   return (
     <Box color={textColor}>
-      <LinkBox fontFamily={"Fragment Mono"} pt={2}>
+      <LinkBox fontFamily={ff} pt={2}>
         <LinkOverlay
-          href="Thesis_RudradeepGuha_Final.pdf"
+          href="https://theses.hal.science/tel-05519173/file/these_A_GUHA_Rudradeep_2025.pdf"
           target="_blank"
           _hover={{ color: accent }}
         >
@@ -14,28 +16,28 @@ export default function Publications({ textColor, accent }) {
             The social transfer function: a system-identification approach to studying social contingency
           </Text>
         </LinkOverlay>
-        <Text fontSize={"xs"} pt={1} color={"grey"}>
+        <Text fontSize={"sm"} color={"grey"}>
           <u>Guha, R.</u>
         </Text>
-        <Text fontSize={"xs"} color={"grey"}>PhD thesis, 2025</Text>
+        <Text fontSize={"sm"} color={"grey"}>PhD thesis, 2025</Text>
       </LinkBox>
             
-      <LinkBox fontFamily={"Fragment Mono"} pt={4}>
+      <LinkBox fontFamily={ff} pt={4}>
         <LinkOverlay
-          href="https://neuro-team-femto.github.io/articles/2024/benghanem_cortex_2024.pdf"
+          href="https://doi.org/10.1016/j.cortex.2024.05.018"
           target="_blank"
           _hover={{ color: accent }}
         >
           <Text fontSize={"sm"}>
             Cortical responses to looming sources are explained away by the
-            auditory periphery.
+            auditory periphery
           </Text>
         </LinkOverlay>
-        <Text fontSize={"xs"} pt={1} color={"grey"}>
+        <Text fontSize={"sm"} color={"grey"}>
           Benghanem, S., <u>Guha, R.</u>, Pruvost-Robieux, E., Levi-Strauss, J.,
           Joucla, C., Cariou, A., ... & Aucouturier, J. J.
         </Text>
-        <Text fontSize={"xs"} color={"grey"}>Cortex, 2024</Text>
+        <Text fontSize={"sm"} color={"grey"}>Cortex, 2024</Text>
       </LinkBox>
     </Box>
   );
